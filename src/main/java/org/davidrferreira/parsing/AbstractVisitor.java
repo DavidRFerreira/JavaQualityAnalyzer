@@ -4,8 +4,8 @@ import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
 public abstract class AbstractVisitor extends VoidVisitorAdapter<Object> {
 
-  private String programName;
-  private String compilationUnitPath;
+  private final String programName;
+  private final String compilationUnitPath;
 
   public AbstractVisitor(String programName, String compilationUnitPath) {
     super();

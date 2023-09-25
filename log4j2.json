@@ -1,0 +1,26 @@
+{
+  "configuration": {
+    "name": "Default",
+    "status": "info",
+    "properties": {},
+    "appenders": {
+      "Console": {
+        "name": "ConsoleAppender",
+        "target": "SYSTEM_OUT",
+        "PatternLayout": {
+          "pattern": "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
+        }
+      }
+    },
+    "loggers": {
+      "root": {
+        "level": "debug",
+        "AppenderRef": [
+          {
+            "ref": "ConsoleAppender"
+          }
+        ]
+      }
+    }
+  }
+}
